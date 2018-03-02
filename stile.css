@@ -46,7 +46,6 @@ li a{
 li a:hover{
 	background-color: #CD5334;
 }
-
 header h1, header h3{
 	color:#E3B23C;
 }
@@ -65,9 +64,12 @@ article {
 }
 pre{
 	margin-top:20px;
+	margin-left:20px;
+	white-space: pre-wrap;
+    word-wrap: break-word;
 }
 code, pre{
-  color:#CD5334;
+	color:#CD5334;
 }
 
 code{
@@ -77,4 +79,16 @@ code{
 	display:block;
 	border: 5px solid #494043;
 	border-radius: 10px;
+}
+button{
+	float:left;
+	z-index: 10000;
+	position: fixed;
+	margin-left:19.5%;
+	max-width:60px;
+	width:100%;
+	border-radius: 20px;
+	border: none;
+	background-color: #E3B23C;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
