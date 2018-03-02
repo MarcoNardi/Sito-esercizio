@@ -12,6 +12,7 @@ header{
 	position:fixed;
 }
 
+
 .col-8{
 	margin-left:20%;
 	margin-right:15px;
@@ -28,7 +29,7 @@ nav ul{
 	overflow: auto;
 	font-family: Verdana,sans-serif;
     font-size: 15px;
-	margin-left:10px;
+	margin-left:0px;
 	z-index:999;
 	border:none;
 }
@@ -67,6 +68,14 @@ pre{
 }
 code, pre{
   color:#CD5334;
+}
+
+code{
+	margin: 10px;
+	background-color: #36393B;
+	display:block;
+	border: 5px solid #494043;
+	border-radius: 10px;
 }
 
 article h4{
