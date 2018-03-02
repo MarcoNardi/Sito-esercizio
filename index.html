@@ -1,0 +1,188 @@
+<!doctype html>
+<!--
+colors:
+	#E3B23C MEAT BROWN
+	#494043 PURPLE TAUPE
+	#CD5334 DARK CORAL
+	#EDB88B PALE GOLD
+	#FAD8D6 PALE PINK
+-->
+<html>
+	<head>
+		<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<link href="stile.css" rel="stylesheet">
+    	<title>L'N-esimo sito sulla programmazione</title>
+		<meta name="keywords" content="c++, programmare, informatica"/>
+		<style>
+		</style>
+		
+	</head>
+	
+	
+<body>
+		
+	<header>
+		<h1  id="titolo">Programmare in C++</h1>
+		<h3 id="sotto-titolo"> programmare è poesia</h3>
+	</header>
+	
+	<nav class="col-2">
+		<ul id="lista-link">
+			<li><a href="#premessa">Premessa.</a></li>
+			<li><a href="#">Array dichiarazioni</a></li>
+			<li><a href="#">Funzioni</a></li>
+			<li><a href="#">Passaggio per riferimento</a></li>
+			
+		</ul>
+	</nav>
+	
+	<section class="col-8">
+	<article >
+		<a name="premessa">
+		<h3 >
+			Premessa 
+		</h3>
+		<p >Il codice è poesia, recita il
+		motto di wordpress e la firma di molti programmatori. Oggigiorno scrivere codice non è più solo questione di pura matematica precisione: c'è di più, si deve sapere creare codice che ha stile, che non solo fa le cose ma le fa bene.
+		In questa pagina, con questa ottica, approfondiremo alcune tematiche
+		relative alla programmazione
+		</p>
+	</article>
+	<article>
+		<h4 >Array: dichiarazione</h4>
+		<!-- testo del paragrafo preso da qui: http://www.html.it/pag/15504/dichiarazione-di-un-array/ 
+		guardate per avere un'idea di come lo si può visualizzare
+		-->
+		<p>La sintassi per dichiarare un <em>array</em>
+		è simile a quella di ogni altra dichiarazione in C++: si deve
+		indicare il tipo, seguito da un nome valido e da una coppia di
+		parentesi quadre che racchiudono un' espressione costante. Tale
+		espressione costante definisce le dimensioni dell' array. Ad
+		esempio: <br/> <code>int array_uno[10]; // Un array di 10 interi char<br/>
+		array_due[20]; // Un array di 20 caratteri 
+		</code><br/>
+		Utilizziamo le parentesi
+		quadre per indicare la dimensione dell'array, ma al loro
+		interno non possiamo utilizzare, almeno in fase di dichiarazione,
+		nomi di variabili. In altre parole il numero di elementi di un array
+		definito in questo modo, deve essere fissato dal principio. Per
+		dimensionare dinamicamente un array occorre servirci di altre
+		funzionalità come l'operatore new per l'allocazione
+		dinamica della memoria. In ogni caso sarà possibile
+		specificare le dimensioni di un array anche utilizzando costanti
+		definite, come ad esempio:<br/>
+		<code>#define ARRAY_UNO_MAX 10 <br/> #define
+		ARRAY_DUE_MAX 20 </code></p>
+	</article>
+	<article>
+	<h4 > Funzioni </h4>
+	<!-- testo del paragrafo preso da qui: http://www.math.unipd.it/~sperduti/CORSO-C%2B%2B/Funzioni%20%28I%29.htm
+	guardate per avere un'idea di come lo si può visualizzare-->
+	<p>
+	L'uso di funzioni permette di strutturare il programma in modo modulare, sfruttando tutte le potenzialità fornite dalla programmazione strutturata fornite dal C++. Una funzione è un blocco di istruzioni con un nome che viene eseguito in ogni punto del programma in cui viene richiamata la funzione usando il nome. Essa si dichiara nel modo seguente: <br/> <code>Tipo Nome ( Argomento1, Argomento2 , ...)</code><br/> Istruzione dove: 
+	- Tipo è il tipo del valore ritornato dalla funzione. 
+	- Nome è il nome con cui possiamo richiamare la funzione. 
+	- Argomento (possiamo indicarne quanti ne vogliamo, anche nessuno). Un argomento è costituito da un nome di tipo seguito da un identificatore (ad esempio int x ), esattamente come in una dichiarazione di variabile; ed infatti, all'interno della funzione, un argomento si comporta come una variabile (locale). Gli argomenti permettono di passare dei parametri quando la funzione viene richiamata. I parametri sono separati da virgole.  Istruzione è il corpo della funzione: un blocco di istruzioni racchiuse tra parentesi graffe {} .
+	</p>
+	</article>
+	
+	<article>
+	<h4 > Passaggio di un puntatore a una funzione </h4>
+	<!-- testo del paragrafo preso da qui: http://www.dis.uniroma1.it/~liberato/struct/mempunt/passaggio.shtml
+	guardate per avere un'idea di come lo si può visualizzare-->
+	<p>
+	Si può passare l'indirizzo di una variabile a una funzione
+	effetti della modifica a) del valore della zona di memoria puntata, e b) del valore del parametro formale stesso
+	cosa succede in memoria
+	La prima applicazione dei puntatori è quello del passaggio dei parametri a una funzione. Quando si passa un numero a una funzione, quello che succede in effetti è che:
+	
+	si crea una nuova variabile con il nome del parametro formale;
+	in questa nuova variabile si copia il valore del parametro attuale;
+	si esegue il corpo della funzione.
+	Questo significa che, se si chiama una funzione passando una variabile come parametro, quello che viene in effetti usato dalla funzione è il valore della variabile, che viene copiato in una zona di memoria nuova (il parametro formale). Se quindi si modifica il parametro formale, queste modifiche vengono fatte nella nuova zona di memoria, distinta da quella del parametro attuale. Quindi, il programma che ha chiamato la funzione non vede le modifiche, semplicemente perchè le modifiche non sono state fatta in una zona di memoria che corrisponde a una sua variabile.
+	Vediamo ora cosa succede se si passa un puntatore ad una funzione. Consideriamo il seguente programma passaggio.c, in cui la funzione esempio prende come parametri un intero e un puntatore a intero.
+	
+	</p>
+	</article>
+	
+	
+	<article>
+		<h4>Poesia</h4>
+		<p>Ora, per completezza, vediamo una vera e propria poesia:</p>
+		<pre>
+		Silvia, rimembri ancora
+		Quel tempo della tua vita mortale,
+		Quando beltà splendea
+		Negli occhi tuoi ridenti e fuggitivi,
+		E tu, lieta e pensosa, il limitare            
+		Di gioventù salivi?
+		
+		Sonavan le quiete
+		Stanze, e le vie dintorno,
+		Al tuo perpetuo canto,
+		Allor che all'opre femminili intenta        
+		Sedevi, assai contenta
+		Di quel vago avvenir che in mente avevi.
+		Era il maggio odoroso: e tu solevi
+		Così menare il giorno.
+		
+		Io gli studi leggiadri                
+		Talor lasciando e le sudate carte,
+		Ove il tempo mio primo
+		E di me si spendea la miglior parte,
+		D'in su i veroni del paterno ostello
+		Porgea gli orecchi al suon della tua voce,    
+		Ed alla man veloce
+		Che percorrea la faticosa tela.
+		Mirava il ciel sereno,
+		Le vie dorate e gli orti,
+		E quinci il mar da lungi, e quindi il monte.    
+		Lingua mortal non dice
+		Quel ch'io sentiva in seno.
+		
+		Che pensieri soavi,
+		Che speranze, che cori, o Silvia mia!
+		Quale allor ci apparia                
+		La vita umana e il fato!
+		Quando sovviemmi di cotanta speme,
+		Un affetto mi preme
+		Acerbo e sconsolato,
+		E tornami a doler di mia sventura.        
+		O natura, o natura,
+		Perchè non rendi poi
+		Quel che prometti allor? perchè di tanto
+		Inganni i figli tuoi?
+		
+		Tu pria che l'erbe inaridisse il verno,        
+		Da chiuso morbo combattuta e vinta,
+		Perivi, o tenerella. E non vedevi
+		Il fior degli anni tuoi;
+		Non ti molceva il core
+		La dolce lode or delle negre chiome,        
+		Or degli sguardi innamorati e schivi;
+		Nè teco le compagne ai dì festivi
+		Ragionavan d'amore.
+		
+		Anche peria fra poco
+		La speranza mia dolce: agli anni miei        
+		Anche negaro i fati
+		La giovanezza. Ahi come,
+		Come passata sei,
+		Cara compagna dell'età mia nova,
+		Mia lacrimata speme!                
+		Questo è quel mondo? questi
+		I diletti, l'amor, l'opre, gli eventi
+		Onde cotanto ragionammo insieme?
+		Questa la sorte dell'umane genti?
+		All'apparir del vero                    
+		Tu, misera, cadesti: e con la mano
+		La fredda morte ed una tomba ignuda
+		Mostravi di lontano.
+		</pre>
+	</article>
+
+	</section >
+		
+</body>
+</html>
