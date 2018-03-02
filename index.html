@@ -5,7 +5,7 @@ colors:
 	#494043 PURPLE TAUPE
 	#CD5334 DARK CORAL
 	#EDB88B PALE GOLD
-	#FAD8D6 PALE PINK
+	#36393B ONYX
 -->
 <html>
 	<head>
@@ -14,8 +14,9 @@ colors:
     	<link href="stile.css" rel="stylesheet">
     	<title>L'N-esimo sito sulla programmazione</title>
 		<meta name="keywords" content="c++, programmare, informatica"/>
-		<style>
-		</style>
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="main.js"></script>
 		
 	</head>
 	
@@ -30,9 +31,9 @@ colors:
 	<nav class="col-2">
 		<ul id="lista-link">
 			<li><a href="#premessa">Premessa.</a></li>
-			<li><a href="#">Array dichiarazioni</a></li>
-			<li><a href="#">Funzioni</a></li>
-			<li><a href="#">Passaggio per riferimento</a></li>
+			<li><a href="#dichiarazione">Array dichiarazioni</a></li>
+			<li><a href="#funzioni">Funzioni</a></li>
+			<li><a href="#passaggio">Passaggio per riferimento</a></li>
 			
 		</ul>
 	</nav>
@@ -50,6 +51,7 @@ colors:
 		</p>
 	</article>
 	<article>
+		<a id="dichiarazione"></a>
 		<h4 >Array: dichiarazione</h4>
 		<!-- testo del paragrafo preso da qui: http://www.html.it/pag/15504/dichiarazione-di-un-array/ 
 		guardate per avere un'idea di come lo si può visualizzare
@@ -76,6 +78,7 @@ colors:
 		ARRAY_DUE_MAX 20 </code></p>
 	</article>
 	<article>
+	<a id="funzioni"></a>
 	<h4 > Funzioni </h4>
 	<!-- testo del paragrafo preso da qui: http://www.math.unipd.it/~sperduti/CORSO-C%2B%2B/Funzioni%20%28I%29.htm
 	guardate per avere un'idea di come lo si può visualizzare-->
@@ -88,22 +91,23 @@ colors:
 	</article>
 	
 	<article>
-	<h4 > Passaggio di un puntatore a una funzione </h4>
+		<a id="passaggio"></a>
+		<h4 > Passaggio di un puntatore a una funzione </h4>
 	<!-- testo del paragrafo preso da qui: http://www.dis.uniroma1.it/~liberato/struct/mempunt/passaggio.shtml
 	guardate per avere un'idea di come lo si può visualizzare-->
-	<p>
-	Si può passare l'indirizzo di una variabile a una funzione
-	effetti della modifica a) del valore della zona di memoria puntata, e b) del valore del parametro formale stesso
-	cosa succede in memoria
-	La prima applicazione dei puntatori è quello del passaggio dei parametri a una funzione. Quando si passa un numero a una funzione, quello che succede in effetti è che:
-	
-	si crea una nuova variabile con il nome del parametro formale;
-	in questa nuova variabile si copia il valore del parametro attuale;
-	si esegue il corpo della funzione.
-	Questo significa che, se si chiama una funzione passando una variabile come parametro, quello che viene in effetti usato dalla funzione è il valore della variabile, che viene copiato in una zona di memoria nuova (il parametro formale). Se quindi si modifica il parametro formale, queste modifiche vengono fatte nella nuova zona di memoria, distinta da quella del parametro attuale. Quindi, il programma che ha chiamato la funzione non vede le modifiche, semplicemente perchè le modifiche non sono state fatta in una zona di memoria che corrisponde a una sua variabile.
-	Vediamo ora cosa succede se si passa un puntatore ad una funzione. Consideriamo il seguente programma passaggio.c, in cui la funzione esempio prende come parametri un intero e un puntatore a intero.
-	
-	</p>
+		<p>
+		Si può passare l'indirizzo di una variabile a una funzione
+		effetti della modifica a) del valore della zona di memoria puntata, e b) del valore del parametro formale stesso
+		cosa succede in memoria
+		La prima applicazione dei puntatori è quello del passaggio dei parametri a una funzione. Quando si passa un numero a una funzione, quello che succede in effetti è che:
+
+		si crea una nuova variabile con il nome del parametro formale;
+		in questa nuova variabile si copia il valore del parametro attuale;
+		si esegue il corpo della funzione.
+		Questo significa che, se si chiama una funzione passando una variabile come parametro, quello che viene in effetti usato dalla funzione è il valore della variabile, che viene copiato in una zona di memoria nuova (il parametro formale). Se quindi si modifica il parametro formale, queste modifiche vengono fatte nella nuova zona di memoria, distinta da quella del parametro attuale. Quindi, il programma che ha chiamato la funzione non vede le modifiche, semplicemente perchè le modifiche non sono state fatta in una zona di memoria che corrisponde a una sua variabile.
+		Vediamo ora cosa succede se si passa un puntatore ad una funzione. Consideriamo il seguente programma passaggio.c, in cui la funzione esempio prende come parametri un intero e un puntatore a intero.
+		
+		</p>
 	</article>
 	
 	
