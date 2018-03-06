@@ -14,8 +14,8 @@ $(document).ready(function () {
 			$("button").text("Hide");
 		}
 		counter++;
-		/
+		
 		*/
-	})
+	});
 });
 
