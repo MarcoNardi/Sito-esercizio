@@ -6,6 +6,7 @@ $(document).ready(function () {
 	$("button").click(function(){
 		
 		$("nav").slideToggle("slow");
+		/*
 		if(counter%2==0){
 			console.log("okay");
 			$("button").text("Show");
@@ -13,6 +14,8 @@ $(document).ready(function () {
 			$("button").text("Hide");
 		}
 		counter++;
+		/
+		*/
 	})
 });
 
