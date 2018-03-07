@@ -4,6 +4,7 @@ $(document).ready(function () {
 		$("html, body").animate({scrollTop: $($(this).attr("href")).offset().top}, "slow");
 		if($("#funzioni").css("font-size")=="0px"){
 			toggleNav("fast");
+			console.log("okay");
 		}
 	});
 	$("button").click(function(){
