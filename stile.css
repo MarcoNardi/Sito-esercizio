@@ -1,3 +1,4 @@
+
 header{ 
 	margin: 0;
 	padding: 0;
@@ -32,6 +33,7 @@ nav ul{
 	margin-left:0px;
 	z-index:999;
 	border:none;
+	
 }
 body{
 	background-color: #EDB88B;
@@ -83,12 +85,26 @@ code{
 button{
 	float:left;
 	z-index: 10000;
-	position: fixed;
-	margin-left:19.5%;
-	max-width:60px;
-	width:100%;
-	border-radius: 20px;
+	position: absolute;
+	left:19%;
+	width:50px;
+	height: 59px;
 	border: none;
 	background-color: #E3B23C;
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	
+}
+
+
+@media only screen and (max-width: 767px){
+	nav ul{
+		overflow-x:hidden;
+	
+	}
+	#toggle-button{
+		left:90%;
+		width: 10%;
+	}
+	#funzioni{
+		font-size:0px;
+	}
 }
