@@ -107,4 +107,7 @@ button{
 	#funzioni{
 		font-size:0px;
 	}
+	.col-2{
+		width:0%;
+	}
 }

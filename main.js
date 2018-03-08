@@ -41,7 +41,7 @@ $(document).ready(function () {
 
 function toggleNav(speed){
 	if($("#funzioni").css("font-size")=="0px"){
-		if(counter%2==0){
+		if(counter%2!==0){
 			$("nav").animate({width:"0%"}, speed);
 			$(".col-8").animate({marginLeft :"5%"}, speed);
 		}else{
